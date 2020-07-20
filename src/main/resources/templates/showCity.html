@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>City</title>
+</head>
+<body>
+<a href="/">Back</a>
+
+<th:block>
+    <h1 th:text="${city.cityName + 'City'}"></h1>
+    <br>
+    <p th:text="${'Country: ' + city.country}"></p>
+    <p th:text="${'Area: ' + city.area}"></p>
+    <p th:text="${'Population: ' + city.population}"></p>
+    <p th:text="${'GDP: ' + city.gdp}"></p>
+    <p th:text="${'Desciption: ' + city.description}"></p>
+</th:block>
+</body>
+</html>
